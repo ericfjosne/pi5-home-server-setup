@@ -16,6 +16,6 @@ sudo apt install ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw default allow routed
-sudo ufw allow in on eth1
+sudo ufw allow in on br0
 sudo ufw enable
 ```

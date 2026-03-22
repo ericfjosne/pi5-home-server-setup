@@ -42,15 +42,29 @@ sudo nmcli -p connection show
 ## Uplink
 
 ```sh
-sudo nmcli connection add type ethernet con-name eth2-uplink ifname eth2 ipv4.method auto
-sudo nmcli connection up eth2-uplink
+sudo nmcli connection add type ethernet con-name eth2 ifname eth2 ipv4.method auto
+sudo nmcli connection up eth2
 ```
 
 ## Local network
+
+Create bridge interface
+
+Disable STP (Spanning Tree Protocol):
+
+STP exists to shut down bridge ports if a bridging loop is created by mistake. At least in the typical use case for this configuration - bridging virtual machines to one of your host NICs - it is virtually impossible to accidentally create a loop. Further, leaving it enabled will cause your physical NIC to broadcast STP packets to the rest of the network and some datacentre and enterprise networks will consider STP packets on an access port to be malicious and shut down the port.
+
+In most scenarios leaving it enabled is harmless, but personally I would almost always disable it unless I was doing something funky enough that an accidental bridging loop was plausible.
+
+This prevents a 30-second delay when bringing the interface up.
+
 ```sh
-sudo nmcli connection add type ethernet con-name eth1-local ifname eth1 ip4 10.0.0.1/24
-sudo nmcli connection modify eth1-local ipv4.method manual
-sudo nmcli connection up eth1-local
+sudo nmcli connection add type bridge con-name br0 ifname br0
+sudo nmcli connection add type bridge-slave ifname eth1 master br0
+sudo nmcli connection modify br0 bridge.stp no
+sudo nmcli connection modify br0 ipv4.addresses 10.0.0.1/24
+sudo nmcli connection modify br0 ipv4.method manual
+sudo nmcli connection up br0
 ```
 
 
@@ -61,3 +75,6 @@ nmcli dev status
 nmcli connection show
 ifconfig
 ```
+
+
+## Add bridge
