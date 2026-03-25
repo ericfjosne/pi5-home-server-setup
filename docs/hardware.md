@@ -1,5 +1,7 @@
 # Hardware
 
+Here is a complete description of the hardware chosen for this build.
+
 - Board: [Raspberry Pi 5 16Gb](https://www.raspberrypi.com/products/raspberry-pi-5/)
 - Hat: [Waveshare PCIe To USB 3.2 Gen1 / 2.5G ETH / M.2 NVMe Adapter](https://www.waveshare.com/pcie-to-m.2-usb-eth-hat-plus.htm?srsltid=AfmBOormpX83d09VId-rshCH1kFKmxKyEZpTaUM68cDPhGUZ8h4nB91v)
   - Supports NVMe Protocol M.2 Solid State Drive (PCIe Gen 2 speed only)
