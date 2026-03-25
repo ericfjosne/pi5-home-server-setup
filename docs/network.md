@@ -1,3 +1,9 @@
+---
+id: network
+title: Configure networking
+sidebar_label: Configure networking
+---
+
 # Configure networking
 
 ## Disable Wifi & bluetooth

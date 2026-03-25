@@ -1,3 +1,9 @@
+---
+id: dhcp-dns
+title: Configure DHCP & DNS servers
+sidebar_label: DHCP & DNS
+---
+
 # Configure DHCP & DNS servers
 
 We want simple no brainer DHCP & DNS services and configurations. `dnsmasq` combines both and its configuration is quite straightforward, making it our choice for this build.

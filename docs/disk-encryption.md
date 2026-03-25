@@ -1,3 +1,9 @@
+---
+id: disk-encryption
+title: Set up disk encryption
+sidebar_label: Disk encryption
+---
+
 # Set up disk encryption
 
 ## Root partition

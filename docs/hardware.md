@@ -1,3 +1,9 @@
+---
+id: hardware
+title: Hardware
+sidebar_label: Hardware
+---
+
 # Hardware
 
 Here is a complete description of the hardware chosen for this build.
