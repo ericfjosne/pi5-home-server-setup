@@ -9,8 +9,8 @@ title: "Raspberry Pi 5 setup as Home Server"
 name: &name "Eric Fjøsne"
 description: &description "A comprehensive guide to setting up a Raspberry Pi 5 server."
 url: "https://ericfjosne.github.io"
-baseurl: "/pi5-home-server-setup"
-repository: "ericfjosne/pi5-home-server-setup"
+baseurl: "/pi5-home-server"
+repository: "ericfjosne/pi5-home-server"
 enable_copy_code_button: true
 
 # Site Author
