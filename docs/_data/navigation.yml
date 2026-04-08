@@ -24,14 +24,18 @@ docs:
         url: /networking/fw.html
       - title: "DHCP & DNS"
         url: /networking/dhcp-dns.html
+  - title: "Virtual environments"
+    children:
+      - title: "Docker"
+        url: /virtual/docker.html
   - title: "Services"
     children:
       - title: "File sharing"
         url: /services/file-sharing.html
       - title: "Time Machine"
         url: /services/timemachine.html
-      - title: "Docker"
-        url: /services/docker.html
+      - title: "Ad-blocker"
+        url: /services/ad-blocker.html
   - title: "Resources"
     children:
       - title: "Site index"

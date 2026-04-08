@@ -7,7 +7,7 @@ If you own one or more Apple computers, you might be looking for a way to seamle
 
 ## Requirements
 
-Samba server needs to be configured. [Read more on this over here](./file-sharing.md).
+- [Samba server](./file-sharing.html) must be installed and configured.
 
 ## Manage user accesses & permissions
 

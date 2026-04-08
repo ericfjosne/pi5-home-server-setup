@@ -3,7 +3,11 @@ title: File sharing service
 toc: true
 ---
 
-For this build, we will make use of Samba. It is an open-source software suite that implements the SMB/CIFS networking protocols, enabling Unix-like systems to seamlessly share files and printers with Windows, macOS, and other Linux machines. 
+For this build, we will make use of Samba.
+
+## What is Samba?
+
+It is an open-source software suite that implements the SMB/CIFS networking protocols, enabling Unix-like systems to seamlessly share files and printers with Windows, macOS, and other Linux machines. 
 
 While CIFS (Common Internet File System) is an older dialect of SMB, Samba now supports modern, faster, and more secure SMB2/3 protocols.
 

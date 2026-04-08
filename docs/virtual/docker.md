@@ -3,6 +3,10 @@ title: Install Docker engine
 toc: true
 ---
 
+## What is Docker?
+
+Docker is an open source platform that allows applications and services to be packaged into containers, along with all required dependencies. Those containers can then be executed directly. You can run many Docker containers, each with its own application, on a single machine. Those applications will be isolated from one another, thus providing data security and reliability.
+
 ## Perform the installation
 
 There are 2 different ways to install Docker engine:
