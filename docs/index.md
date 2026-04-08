@@ -1,7 +1,37 @@
 ---
 title: Description
+toc: true
 ---
 
-Complete Raspberry Pi 5 configuration as home server (gateway, NAS, ...).
+This guide describes how to configure a Raspberry Pi 5 as a home server. It can also probably be used for earlier Raspberry Pi devices, or even regular computers.
 
-Use the sidebar for navigation.
+## Project goals
+
+My goal with this project was to have a single tiny yet mighty device, and associated storage, that fits nicely within an electricity cabinet, and _literally_ does it all.
+
+It needs to provide the following features for the entire home network:
+- Firewall/Router acting as gateway
+- DHCP/DNS server
+- Network attached storage
+- Remote Time Machine backup target
+- Seamless network-wide ad-blocker
+- Private Home Assistant instance runner
+- Private git server
+- SMTP mail relay server
+- ...
+
+It should also expose the following services externally, for remote access:
+- Secure HTTP server
+- Secure VPN server
+
+Networking considerations aside, it should also ensure that:
+- All data and credentials are secure, and all disks are encrypted.
+- Backups are performed automatically ... or rather as automatically as possible.
+
+## Why make it available publicly?
+
+I originally created it as a future reference for myself. I later realized it might be of interest to others, because such a consolidated reference for a setup like this one does not seem to exist elsewhere.
+
+## Disclaimer
+
+This guide is provided without warranties, and I cannot be held responsible for any problems that may arise from using it. You should always know and understand what you are doing.
