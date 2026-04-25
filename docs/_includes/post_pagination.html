@@ -1,0 +1,55 @@
+{% if page.sidebar.nav %}
+  {% assign navigation = site.data.navigation[page.sidebar.nav] %}
+  
+  {% comment %} 
+    Step 1: Flatten the 1-level nested navigation into a linear list
+  {% endcomment %}
+  {% assign nav_items = "" | split: "" %}
+  {% for item in navigation %}
+    {% if item.url %}
+      {% assign nav_items = nav_items | push: item %}
+    {% endif %}
+    {% for child in item.children %}
+      {% if child.url %}
+        {% assign nav_items = nav_items | push: child %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% comment %} 
+    Step 2: Find the current page index
+  {% endcomment %}
+  {% assign curr_index = nil %}
+  {% for item in nav_items %}
+    {% if item.url == page.url or item.url == page.url | append: "/" %}
+      {% assign curr_index = forloop.index0 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} 
+    Step 3: Build the "Prev" and "Next" buttons
+  {% endcomment %}
+  {% if curr_index %}
+    {% assign prev_index = curr_index | minus: 1 %}
+    {% assign next_index = curr_index | plus: 1 %}
+
+    <nav class="pagination">
+      {% if prev_index >= 0 %}
+        {% assign prev_page = nav_items[prev_index] %}
+        <a href="{{ prev_page.url | relative_url }}" class="pagination--pager">
+        	<span class="pager-direction">Previous:</span><br/>
+          <span class="pager-title">{{ prev_page.title }}</span>
+        </a>
+      {% endif %}
+      {% if next_index < nav_items.size %}
+        {% assign next_page = nav_items[next_index] %}
+
+        <a href="{{ next_page.url | relative_url }}" class="pagination--pager">
+          <span class="pager-direction">Next:</span><br/>
+          <span class="pager-title">{{ next_page.title }}</span>
+        </a>
+      {% endif %}
+    </nav>
+  {% endif %}
+{% endif %}

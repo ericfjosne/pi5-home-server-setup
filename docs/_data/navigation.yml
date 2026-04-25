@@ -1,5 +1,9 @@
 # Sidebar Navigation
 docs:
+  - title: "Project"
+    children:
+      - title: "Description"
+        url: /
   - title: "Build"
     children:
       - title: "Hardware"
@@ -52,8 +56,6 @@ docs:
         url: /backups/data.html
   - title: "Resources"
     children:
-      - title: "Site index"
-        url: /
       - title: "Github repo"
         url: https://github.com/ericfjosne/pi5-home-server-setup/
         target: _blank
