@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2em;
+  border-top: 1px solid #f2f3f3;
+  padding-top: 1em;
+}
+
+.pagination--pager {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pager-direction {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #898c8f;
+}

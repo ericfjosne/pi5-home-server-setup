@@ -41,17 +41,17 @@ footer:
 # Defaults
 defaults:
   - scope:
-      path: ""
-      type: pages
+      path: "" # Apply to all files in the project
     values:
-      layout: single
+      layout: "single"
       read_time: false
       author_profile: false
       share: false
       comments: false
       toc_sticky: true
+      show_page_nav: true # Enables custom "Previous/Next" navigation, using _includes/post_navigation.html
       sidebar:
-        nav: "docs"
+        nav: "docs" # Links the sidebar to the 'docs' list in _data/navigation.yml
 
 # Plugins
 plugins:
