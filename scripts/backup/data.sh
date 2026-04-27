@@ -84,7 +84,7 @@ if [[ -v MAIL_RECIPIENT ]]; then
   HOSTNAME=`hostname`
   MAIL_BODY="Backup to $BACKUP_CRYPTDISK_NAME completed!\n\nStarted on $DATETIME_START\nFinished on $DATETIME_END\n\nYou can now unplug the USB disk from ${HOSTNAME^}."
   MAIL_SUBJECT="Backup of data on ${HOSTNAME^} is completed!"
-  printf $MAIL_BODY | mail -s $MAIL_SUBJECT $MAIL_RECIPIENT
+  printf "$MAIL_BODY" | mail -s "$MAIL_SUBJECT" $MAIL_RECIPIENT
 fi
 
 exit 0
