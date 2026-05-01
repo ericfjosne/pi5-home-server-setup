@@ -1,11 +1,11 @@
 ---
-title: Description
+title: Project
 toc: true
 ---
 
 This guide describes how to configure a Raspberry Pi 5 as a home server. It can also probably be used for earlier Raspberry Pi devices, or even regular computers.
 
-## Project goals
+## Goals
 
 My goal with this project was to have a single tiny yet mighty device, and associated storage, that fits nicely within an electricity cabinet, and _literally_ does it all.
 
@@ -14,15 +14,10 @@ It needs to provide the following features for the entire home network:
 - DHCP/DNS server
 - Network attached storage
 - Remote Time Machine backup target
-- Seamless network-wide ad-blocker
+- Network-wide ad-blocker
 - Private Home Assistant instance runner
-- Private git server
 - SMTP mail relay server
 - ...
-
-It should also expose the following services externally, for remote access:
-- Secure HTTP server
-- Secure VPN server
 
 Networking considerations aside, it should also ensure that:
 - All data and credentials are secure, and all disks are encrypted.
