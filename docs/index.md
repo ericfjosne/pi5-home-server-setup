@@ -30,3 +30,7 @@ I originally created it as a future reference for myself. I later realized it mi
 ## Disclaimer
 
 This guide is provided without warranties, and I cannot be held responsible for any problems that may arise from using it. You should always know and understand what you are doing.
+
+## Report an issue
+
+If you see something wrong in this guide, or you have a suggestion on how to improve it, I would love to hear about it! I tried to make issue reporting as easy as possible. [Check out how to report issues over here](./contribute/report-issue.html).

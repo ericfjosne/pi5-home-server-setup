@@ -19,3 +19,36 @@
   text-transform: uppercase;
   color: #898c8f;
 }
+
+/* Custom GitHub Issue Link Styling */
+.page__meta-issue {
+  margin-left: 10px; // Space it out from the reading time
+  
+  a {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #555 !important; // Match meta text color
+    text-decoration: none;
+    border: 1px solid #dae1e7;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease-in-out;
+
+    i {
+      margin-right: 4px;
+      color: #24292e; // GitHub black
+    }
+
+    &:hover {
+      background-color: #24292e;
+      color: #fff !important;
+      border-color: #24292e;
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
