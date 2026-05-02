@@ -30,6 +30,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Buy Me a Coffee"
+      icon: "fas fa-fw fa-coffee"
+      url: "https://www.buymeacoffee.com/ericfjosne"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ericfjosne"

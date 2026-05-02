@@ -34,3 +34,9 @@ This guide is provided without warranties, and I cannot be held responsible for 
 ## Report an issue
 
 If you see something wrong in this guide, or you have a suggestion on how to improve it, I would love to hear about it! I tried to make issue reporting as easy as possible. [Check out how to report issues over here](./contribute/report-issue.html).
+
+## Support me
+
+If you would like to offer your appreciation for my expertise and efforts with this guide, you can [buy me a coffee](https://www.buymeacoffee.com/ericfjosne)!
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/ericfjosne)

@@ -4,6 +4,8 @@ docs:
     children:
       - title: "Description"
         url: /
+      - title: "About the author"
+        url: /author.html
   - title: "Build"
     children:
       - title: "Hardware"
@@ -56,5 +58,7 @@ docs:
         url: /backups/data.html
   - title: "Contribute"
     children:
+      - title: "Support me"
+        url: /contribute/sponsor.html
       - title: "Report an issue"
-        url: /support/report-issue.html
+        url: /contribute/report-issue.html
