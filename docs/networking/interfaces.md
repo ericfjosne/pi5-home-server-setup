@@ -14,7 +14,6 @@ sudo nmcli -p connection show
 Delete them, based on UUID or name
 
 ```sh
-
 sudo nmcli connection delete [UUID]
 sudo nmcli connection delete netplan-eth0
 ```
