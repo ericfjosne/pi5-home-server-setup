@@ -33,7 +33,9 @@ This guide is provided without warranties, and I cannot be held responsible for 
 
 ## Report an issue
 
-If you see something wrong in this guide, or you have a suggestion on how to improve it, I would love to hear about it! I tried to make issue reporting as easy as possible. [Check out how to report issues over here](./contribute/report-issue.html).
+If you see something wrong in this guide, or you have a suggestion on how to improve it, I would love to hear about it! I tried to make issue reporting as easy as possible.
+
+[Check out how to report issues over here](./contribute/report-issue.html).
 
 ## Support me
 

@@ -5,19 +5,19 @@ minimal_mistakes_skin: "default"
 # Site Data
 locale: en-US
 encoding: "utf-8"
-title: "Raspberry Pi 5 setup as Home Server"
+title: "Raspberry Pi setup as Home Server"
 name: &name "Eric Fjøsne"
 description: &description "A comprehensive guide to setting up a Raspberry Pi 5 as a home server. It can also probably be used for earlier Raspberry Pi devices, or even regular computers."
 url: "https://ericfjosne.github.io"
-baseurl: "/pi5-home-server"
-repository: "ericfjosne/pi5-home-server"
+baseurl: "/rpi-home-server"
+repository: "ericfjosne/rpi-home-server"
 enable_copy_code_button: true
 
 # Site Author
 author:
   name   : *name
   avatar : "https://avatars.githubusercontent.com/u/4800868"
-  bio    : "Tech enthusiast and Pi 5 builder."
+  bio    : "Tech enthusiast and Raspberry Pi builder."
   location: "Stockholm, Sweden"
   links:
     - label: "GitHub"
