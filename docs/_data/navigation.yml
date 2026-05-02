@@ -54,8 +54,7 @@ docs:
         url: /backups/configuration.html
       - title: "Data"
         url: /backups/data.html
-  - title: "Resources"
+  - title: "Contribute"
     children:
-      - title: "Github repo"
-        url: https://github.com/ericfjosne/pi5-home-server-setup/
-        target: _blank
+      - title: "Report an issue"
+        url: /support/report-issue.html

@@ -1,0 +1,38 @@
+<p class="page__meta">
+  <span class="page__meta-issue">
+    <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+    <a href="#" id="gh-issue-link" onclick="openGitHubIssue(); return false;">
+      Report an issue for this page (works with text selection)
+    </a>
+  </span>
+</p>
+
+<script>
+function openGitHubIssue() {
+  // 1. Get the selected text from the browser
+  const selection = window.getSelection().toString();
+  
+  // 2. Define page context
+  const pageTitle = document.title;
+  const pageUrl = window.location.href;
+  const repo = "ericfjosne/pi5-home-server";
+  
+  // 3. Build the body content
+  let body = `**Source Page**: ${pageUrl}\n\n`;
+  
+  if (selection) {
+    body += `**Selected Context**:\n> ${selection}\n\n`;
+    body += `**Comments**:\n[Describe the issue here]`;
+  } else {
+    body += `[Describe the issue here]`;
+  }
+
+  // 4. Construct the URL
+  const issueUrl = `https://github.com/${repo}/issues/new?title=` + 
+                   encodeURIComponent(`Feedback: ${pageTitle}`) + 
+                   `&body=` + encodeURIComponent(body);
+
+  // 5. Open in a new tab
+  window.open(issueUrl, '_blank');
+}
+</script>
